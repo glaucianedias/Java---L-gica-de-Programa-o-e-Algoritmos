@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class PROBLEMA_TROCO {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double preco, quantidade, dinheiro, troco;
+		
+		System.out.print("Preco unitario do produto: ");
+		preco = sc.nextDouble();
+		System.out.print("Quantidade comprada: ");
+		quantidade = sc.nextDouble();
+		System.out.print("Dinheiro recebido: ");
+		dinheiro = sc.nextDouble();
+		
+		troco = dinheiro - (quantidade * preco);
+		
+		System.out.printf("TROCO = " + String.format("%.2f", troco));
+		
+		sc.close();
+		
+	}
+
+}
