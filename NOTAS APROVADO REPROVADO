@@ -1,0 +1,32 @@
+#include "stdio.h"
+#include "math.h"
+#include "locale.h"
+
+void main () {
+
+    float nota1, nota2, nota3, nota4, media;
+
+    printf("DIGITE O VALOR DAS NOTAS: ");
+    printf("\n");
+    scanf("\n%f", &nota1);
+    scanf("\n%f", &nota2);
+    scanf("\n%f", &nota3);
+    scanf("\n%f", &nota4);
+    printf("\n");
+
+    media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+    if (media >= 6)
+    {
+        printf("APROVADO - MEDIA: %.2f", media);
+        printf("\n");
+    }
+    else
+    {
+        printf("REPROVADO - MEDIA: %.2f", media);
+        printf("\n");
+    }
+
+    return 0;
+
+}
